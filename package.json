@@ -1,0 +1,24 @@
+{
+  "name": "dndw",
+  "version": "1.0.0",
+  "description": "Discord Bot for DNDW.net",
+  "main": "src/index.js",
+  "dependencies": {
+    "consola": "^2.10.1",
+    "discord.js": "^11.6.4",
+    "discord.js-commando": "^0.10.0",
+    "dotenv": "^8.0.0",
+    "ioredis": "^4.14.0",
+    "jsonapi-fractal": "^1.0.17",
+    "moment": "^2.24.0",
+    "moment-duration-format": "^2.3.2",
+    "node-fetch": "^2.6.0",
+    "query-string": "^6.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "author": "Debaucus",
+  "license": "ISC"
+}
