@@ -44,17 +44,17 @@ require('dotenv').config();
   client.on('error', console.error);
   client.on('debug', console.log);
 
-  setInterval(function() {
-    var generalChannel = client.channels.get("835991369633759272"); // Replace with known channel ID
-    generalChannel.send(
-      new MessageEmbed()
-        .addField('Vote for DNDW', 'Vote for DNDW to support the server once every 12 hours.')
-        .addField('Top.gg', 'https://top.gg/servers/834868131804479541/vote')
-        .setColor(13632027)
-        .setThumbnail('https://dndw.net/assets/avatars/dndw.png')
-        .setFooter(`DNDW.net - Stopping Scammers`)
-    );
-  }, (1000 * 60 * 720));
+  //setInterval(function() {
+  //  var generalChannel = client.channels.get("835991369633759272"); // Replace with known channel ID
+  //  generalChannel.send(
+  //    new MessageEmbed()
+  //      .addField('Vote for DNDW', 'Vote for DNDW to support the server once every 12 hours.')
+  //      .addField('Top.gg', 'https://top.gg/servers/834868131804479541/vote')
+  //      .setColor(13632027)
+  //      .setThumbnail('https://dndw.net/assets/avatars/dndw.png')
+  //      .setFooter(`DNDW.net - Stopping Scammers`)
+  //  );
+  //}, (1000 * 60 * 720));
 
   //client.on('guildMemberAdd', member => {
     //var generalChannel = client.channels.get("838750755258368031"); // Replace with known channel ID
