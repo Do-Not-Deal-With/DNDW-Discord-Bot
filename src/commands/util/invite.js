@@ -20,9 +20,9 @@ class InviteLink extends Command {
   run(msg, args) {
     return msg.embed(
       new MessageEmbed()
-        .addField('Invite Link', 'https://dndw.net/invite-bot')
+        .addField('Bot Invite Link', 'https://dndw.net/invite-bot')
         .addField('Website', 'https://dndw.net')
-        .addField('Discord Server', 'https://discord.gg/6bGTKH2yaj')
+        .addField('DNDW Discord Server', 'https://discord.gg/6bGTKH2yaj')
         .setColor(13632027)
         .setThumbnail('https://dndw.net/assets/avatars/dndw.png')
         .setFooter(`DNDW.net - Stopping Scammers`)

@@ -8,8 +8,8 @@ module.exports = class DiscussCommand extends Command {
       group: 'flarum',
       memberName: 'search',
       description: 'Search reports on DNDW.net and check too see who you are dealing with.',
-      format: 'search @DiscordTag/ID',
-      examples: ['#dndw search @DiscordTag/ID'],
+      format: 'Search Term',
+      examples: ['#dndw search Discord Scam', '#dndw search Twitter Scam'],
       throttling: {
         usages: 10,
         duration: 60,

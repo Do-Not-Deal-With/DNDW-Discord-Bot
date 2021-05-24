@@ -25,7 +25,7 @@ class StatsCommand extends Command {
 
   run(msg) {
     const embed = new MessageEmbed()
-      .setColor(3447003)
+      .setColor(13632027)
       .setTitle('DNDW Bot Statistics')
       .addField(
         '❯ Uptime',
@@ -41,7 +41,7 @@ class StatsCommand extends Command {
         '❯ Contributors',
         stripIndents`
         • [@Debaucus](https://twitter.com/debaucus)
-        ❯ Source Code:
+        ❯ Base Code:
 				• [@luceos](https://github.com/luceos)
 				• [@datitisev](https://github.com/datitisev)
 			`,

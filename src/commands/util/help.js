@@ -61,8 +61,8 @@ class HelpCommand extends Command {
     }
 
     const embed = new MessageEmbed()
-      .setColor(3447003)
-      .setTitle(`\`${prefix}${command.name} ${command.format || ''}\``)
+      .setColor(13632027)
+      .setTitle(`\`${prefix} ${command.name} ${command.format || ''}\``)
       .addField('❯ Description', command.description || '\u200b')
       .addField('❯ Usage', command.usage() || '\u200b');
 
