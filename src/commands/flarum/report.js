@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 class ReportCommand extends Command {
   constructor(client) {
@@ -19,7 +19,7 @@ class ReportCommand extends Command {
 
   run(msg, args) {
     return msg.embed(
-      new RichEmbed()
+      new MessageEmbed()
         .setTitle('How to Report a Scammer/Scam')
         .addField('❯ Evidence and Discord Tag/ID', 'With evidence, post a report on DNDW.net and include the details related to the scam.')
         .addField('❯ Where do I post the scam?', 'https://dndw.net/t/do-not-deal-with')

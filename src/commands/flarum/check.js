@@ -27,7 +27,7 @@ module.exports = class DiscussCommand extends Command {
   }
 
   async check(msg, q) {
-    await msg.channel.startTyping();
+    //await msg.channel.startTyping();
 
     return discuss
       .get(`/api/discussions`, {

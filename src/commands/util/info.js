@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const { stripIndents } = require('common-tags');
 const moment = require('moment');
 require('moment-duration-format');
@@ -24,7 +24,7 @@ class StatsCommand extends Command {
   }
 
   run(msg) {
-    const embed = new RichEmbed()
+    const embed = new MessageEmbed()
       .setColor(3447003)
       .setTitle('DNDW Bot Statistics')
       .addField(
@@ -47,7 +47,8 @@ class StatsCommand extends Command {
 			`,
         true
       )
-      .addField('❯ Original Source Code', 'https://github.com/extiverse/bot', true)
+      .addField('❯ Source Code', 'https://github.com/Debaucus/DNDW-Discord-Bot', false)
+      .addField('❯ Based on', 'https://github.com/extiverse/bot', false)
       .setThumbnail('https://dndw.net/assets/avatars/dndw.png')
       .setFooter(`DNDW.net - Stopping Scammers.`);
 

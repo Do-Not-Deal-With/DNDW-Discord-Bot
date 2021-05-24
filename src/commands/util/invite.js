@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 class InviteLink extends Command {
   constructor(client) {
@@ -19,7 +19,7 @@ class InviteLink extends Command {
 
   run(msg, args) {
     return msg.embed(
-      new RichEmbed()
+      new MessageEmbed()
         .addField('Invite Link', 'https://dndw.net/invite-bot')
         .addField('Website', 'https://dndw.net')
         .addField('Discord Server', 'https://discord.gg/6bGTKH2yaj')

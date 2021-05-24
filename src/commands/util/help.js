@@ -1,5 +1,5 @@
 const { Command } = require('discord.js-commando');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 
 class HelpCommand extends Command {
   constructor(client) {
@@ -38,7 +38,7 @@ class HelpCommand extends Command {
     const prefix = this.client.commandPrefix;
 
     if (!command) {
-      const embed = new RichEmbed()
+      const embed = new MessageEmbed()
         .setColor(3447003)
         .addField(
           '❯ Bot Commands',
@@ -60,7 +60,7 @@ class HelpCommand extends Command {
       return msg.say(embed);
     }
 
-    const embed = new RichEmbed()
+    const embed = new MessageEmbed()
       .setColor(3447003)
       .setTitle(`\`${prefix}${command.name} ${command.format || ''}\``)
       .addField('❯ Description', command.description || '\u200b')

@@ -1,5 +1,5 @@
 const { URL } = require('url');
-const { RichEmbed } = require('discord.js');
+const { MessageEmbed } = require('discord.js');
 const Pusher = require('../../broadcasting/pusher');
 const Cache = require('../../Cache');
 const { discuss } = require('../../api');
@@ -13,7 +13,7 @@ const handle = (err, data) => {
 };
 const wrap = (cb) => (arg) => (async () => cb(arg))().catch(handle);
 const errorEmbed = (id, err) =>
-  new RichEmbed()
+  new MessageEmbed()
     .setTitle(`An error ocurred when sending an extension event`)
     .addField('Channel', `<#${id}>`)
     .addField('Error', `${err.name}: ${err.message}`)
@@ -96,7 +96,7 @@ module.exports = (client) => {
           return send(
             'newPost',
             ev,
-            new RichEmbed()
+            new MessageEmbed()
               .setTitle(`New post on ${discussion.title}`)
               .setURL(
                 `${discuss.base}/d/${discussion.id}-${discussion.slug}/${post.number}`
