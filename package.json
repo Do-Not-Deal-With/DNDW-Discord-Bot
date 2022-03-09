@@ -12,7 +12,7 @@
     "jsonapi-fractal": "^1.0.17",
     "moment": "^2.24.0",
     "moment-duration-format": "^2.3.2",
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.7",
     "query-string": "^6.8.2"
   },
   "devDependencies": {},
